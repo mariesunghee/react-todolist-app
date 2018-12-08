@@ -6,7 +6,7 @@ export default class TodoList extends Component{
         return (
             <div className="todoListMain">
                 <div className="header">
-                    <form>
+                    <form onSubmit={this.props.addItem}>
                         <input placeholder="Task"/>
                         <button type="submit"> Add Task</button>
                     </form>
